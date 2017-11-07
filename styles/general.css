@@ -1,0 +1,21 @@
+
+ul{
+    background-color: peachpuff;
+}
+
+/* Selector por id, se le agrega # */
+#menu{
+    color:orange;
+    font-size: 30px;
+    background-color: #becbe4;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+/* Selector por clase, se le agrega . */
+
+.receta.preparacion{
+    color:red;
+}
