@@ -14,8 +14,17 @@ ul{
     display: inline-block;
 }
 
+#home{
+    background-image: url(http://soscreacionesweb.com/sites/default/files/fondo-slide-1_2_0.jpg);
+}
+
+#contacto{
+    background-image: url(http://soscreacionesweb.com/sites/default/files/fondo-slide-1_2_0.jpg);
+}
+
 /* Selector por clase, se le agrega . */
 
 .receta.preparacion{
     color:red;
 }
+
