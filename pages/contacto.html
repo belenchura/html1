@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Contacto</title>
-</head>
-<body>
-    <h1>Escribinos</h1>
-    <h3>Completa el siguiente formulario para hacernos llegar tu mensaje !</h3>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="styles/general.css">
+    </head>
+
+    <body id="contacto">
+        <form>
+            <h1 id="escribi">Escribinos</h1>
+            <h3>Completa el siguiente formulario para hacernos llegar tu mensaje !</h3>
+            
+            <div>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido*" id="nombre" required>
+            </div>
+
+            <div>
+                <input type="email" placeholder="E-mail*" id="mail" required>
+            </div>
+            
+            <div>
+                <form name="contactForm" id="cntForm" method="post">
+            </div>
+                    
+            <div>
+                    <select id="provincia" name="provincia" class="form-control noobligatorio">
+                    <option value="">Seleccionar</option>
+                    <option value="Capital Federal">Capital Federal</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>              
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucumán">Tucumán</option>
+                </select>
+            </div>
+                    
+            <div>
+            <textarea name="cntMessage" id="cntMessage" class="form-control contact-message obligatorio" rows="3" placeholder="Consulta *" required=""></textarea>
+            </div>
+            
+            <div>
+            <input type="checkbox" id="desea" value="check" class="noobligatorio">&nbsp;&nbsp;Deseo recibir las novedades de Cocineros Argentinos
+            </div>
+
+            <div>
+            <input type="button" onclick="enviarConsulta();" class="btn btn-primary hvr-shutter-out-horizontal btn-send" value="Enviar">
+            </div>       
+        </form>
+
+    </body>
 </html>
